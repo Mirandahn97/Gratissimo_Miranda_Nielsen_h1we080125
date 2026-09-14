@@ -1,0 +1,97 @@
+@use '../../style/globals.scss';
+
+.footerStyle {
+    background-color: globals.$color_red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+   
+    margin-top: auto;
+    padding: 5px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+
+        h3 {
+            color: globals.$color_white;
+        }
+
+        a {
+            color: globals.$color_white;
+            text-decoration: none;
+        }
+
+        p {
+            color: globals.$color_white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        input {
+            border: none;
+            border-radius: 5px 0 0 5px;
+            padding: 8px;
+            width: 65%;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        button {
+            border: none;
+            border-radius: 0 5px 5px 0;
+            width: 25%;
+            padding: 8px;
+            background-color: globals.$color_darkRed;
+            color: globals.$color_white;
+            height: 100%;
+        }
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 20%;
+        }
+    }
+
+    .imgStyle {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footerStyle {
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 1rem;
+
+        div {
+            width: 100%;
+
+            button {
+                width: auto;
+            }
+        }
+
+        img {
+            min-width: 30px;
+        }
+
+        p {
+            display: flex;
+        }
+
+    }
+
+}

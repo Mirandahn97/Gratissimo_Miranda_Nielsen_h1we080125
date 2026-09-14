@@ -1,0 +1,11 @@
+@use '../../style/globals.scss';
+
+.logoStyle {
+    background-color: globals.$color_red;
+
+    img {
+        display: block;
+        object-fit: cover;
+        width: 50%;
+    }
+}

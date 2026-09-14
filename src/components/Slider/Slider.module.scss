@@ -1,0 +1,36 @@
+@use '../../style/globals.scss';
+
+.sliderStyle {
+    text-align: center;
+    background-color: globals.$color_white;
+    padding: 5px;
+
+    h2{
+        color: globals.$color_darkRed;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+        width: 17px;
+        height: 17px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background: globals.$color_white;
+        cursor: pointer;
+    }
+
+    .active {
+        background: globals.$color_darkRed;
+    }
+}

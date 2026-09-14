@@ -1,0 +1,37 @@
+@use '../../style/globals.scss';
+
+.sectionStyle {
+    font-family: "Montserrat", sans-serif;
+    padding: 8px;
+    text-align: center;
+    background-color: globals.$color_white;
+
+    h2 {
+        font-weight: 100;
+    }
+
+    button {
+        background-color: globals.$color_darkRed;
+        color: globals.$color_white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .sectionStyle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            width: 30%;
+            border-radius: 45px;
+            height: 40px;
+        }
+    }
+}

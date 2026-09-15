@@ -27,17 +27,21 @@ export function Login() {
             .then(
                 res => res.json()
             ).then(
-                 data => setLoginData(data)
+                data => setLoginData(data)
             )
 
     }
     return (
         <form onSubmit={handleSubmit} className={style.formStyle}>
             <h2>Log ind</h2>
-            <p>Email</p>
-            <input type="email" placeholder="Skriv din email..." name="username" />
-            <p>Password</p>
-            <input type="password" placeholder="Skriv dit password..." name="password" />
+            <div>
+                <label htmlFor='email'>Email</label>
+                <input id='email' type="email" placeholder="Skriv din email..." name="username" required/>
+            </div>
+            <div>
+                <label htmlFor="password">Password</label>
+                <input id="password" type="password" placeholder="Skriv dit password..." name="password" required/>
+            </div>
             <button type="submit">Login</button>
             <NavLink to={'/opret'}>Opret bruger</NavLink>
         </form>

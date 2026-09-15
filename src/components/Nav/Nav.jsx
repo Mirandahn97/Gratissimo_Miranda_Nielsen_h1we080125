@@ -1,11 +1,18 @@
 import { useAuth } from '../../provider/auth.provider'
-import { NavLink } from "react-router"
+import { NavLink, useNavigate } from "react-router"
 import style from './Nav.module.scss'
-import { Login } from '../Login/Login'
+
 
 export function Nav() {
 
     const { loginData, logout } = useAuth()
+
+    const navigate = useNavigate()
+
+    const hadleLogout = () => {
+        logout()
+        navigate('/')
+    }
 
     return (
         <nav className={style.navStyle}>
@@ -20,22 +27,23 @@ export function Nav() {
                     <NavLink to={'/nyheder'}>Nyheder</NavLink>
                 </li>
                 {!loginData ?
-                    <>
+                    <div>
                         <li>
-                            <NavLink>Opret Profil</NavLink>
+                            <NavLink to={'/opret'}>Opret Profil</NavLink>
                         </li>
                         <li>
-                            <NavLink to= '/login'>Log ind</NavLink>
+                            <NavLink to='/login'>Log ind</NavLink>
                         </li>
-                    </>
-                    : <>
+                    </div>
+                    :
+                     <div>
                         <li>
                             <NavLink>Min side</NavLink>
                         </li>
                         <li>
-                            <NavLink>Log ud</NavLink>
+                            <NavLink onClick={hadleLogout}>Log ud</NavLink>
                         </li>
-                    </>
+                    </div>
                 }
             </ul>
         </nav>

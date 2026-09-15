@@ -10,7 +10,8 @@
         font-weight: 300;
     }
 
-    a{
+    p:last-of-type{
         color: globals.$color_red;
+        text-decoration: underline;
     }
 }

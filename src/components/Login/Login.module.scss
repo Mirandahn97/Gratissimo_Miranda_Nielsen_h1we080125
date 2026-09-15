@@ -11,8 +11,9 @@
         font-weight: 300;
     }
 
-    p {
+    label {
         font-family: "Montserrat Alternates", sans-serif;
+        text-align: start;
     }
 
     input {
@@ -21,6 +22,12 @@
         border: none;
         padding: 8px;
 
+    }
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
     }
 
     button {

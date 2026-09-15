@@ -1,0 +1,41 @@
+@use '../../style/globals.scss';
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    font-family: "Montserrat", sans-serif;
+    gap: 1rem;
+
+    h2 {
+        font-weight: 300;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    input {
+        background-color: globals.$color_sand;
+        border: 1px solid #00000027;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    button {
+        border: 1px solid #00000027;
+        border-radius: 8px;
+        padding: 8px;
+        background-color: globals.$color_darkRed;
+        color: globals.$color_white;
+    }
+
+    a {
+        color: globals.$color_red;
+        text-decoration: none;
+    }
+}

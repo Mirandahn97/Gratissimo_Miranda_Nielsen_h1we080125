@@ -26,5 +26,15 @@
 
 
         }
+        div {
+            display: flex;
+            
+            li {
+                padding: 0 8px;
+            }
+            > li:last-of-type {
+                border-left: solid 1px #fff;
+            }
+        }
     }
 }

@@ -34,7 +34,7 @@ export function Categories() {
                 {categoryData && categoryData?.map((categories) => (
                     <div onClick={handleClick} key={categories.id} categoryid={categories.id}>
                         <p>{categories.name}</p>
-                        <p>{jobsData?.filter((job) => job.jobCategoryId == categories.id).length}</p>
+                        <p className={style.numberStyle}>{jobsData?.filter((job) => job.jobCategoryId == categories.id).length}</p>
                     </div>
                 ))}
                 </div>

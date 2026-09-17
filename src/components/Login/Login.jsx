@@ -25,13 +25,20 @@ export function Login() {
                 "Content-Type": 'application/json'
             }
         })
-            .then(
-                res => res.json()
-            ).then(
-                data => setLoginData(data),
-                window.alert('Du er nu logget ind'),
+            .then(res => {
+                
+                return res.json()
+            })
+            .then(data => {
+                console.log(data)
+                if (data.error){
+                    window.alert('Forkert email eller password')
+                } else {
+                setLoginData(data)
+                window.alert('Du er nu logget ind')
                 navigate('/minside')
-            )
+                }
+            })
 
     }
     return (

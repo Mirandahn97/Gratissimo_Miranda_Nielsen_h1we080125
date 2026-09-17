@@ -5,6 +5,8 @@
     font-family: "Montserrat", sans-serif;
     padding: 8px;
 
+   
+
 
     h2{
          font-family: "Montserrat", sans-serif;
@@ -14,6 +16,7 @@
         margin: 8px;
         border: 1px solid #00000027;
         border-radius: 8px;
+        background-color: globals.$color_white;
         
 
         img {
@@ -30,5 +33,9 @@
     .cardStyle{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .newStyle{
+        background-color: globals.$color_white;
     }
 }

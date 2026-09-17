@@ -60,7 +60,7 @@ export function Search() {
                 <input name='searchBar' type="text" placeholder='Eks. cafémedhjælper..' />
                 <button onClick={handleSearch}>Søg</button>
             </div>
-            <div id='searchFilters'>
+            <div className={style.filterStyle} id='searchFilters'>
                 <p>Filtrer:</p>
                 <select>
                     <option hidden defaultValue='Region' value="region">Region</option>

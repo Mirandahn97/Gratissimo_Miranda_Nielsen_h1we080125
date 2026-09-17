@@ -1,0 +1,50 @@
+@use '../../style/globals.scss';
+
+
+.sectionStyle {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #00000027;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px;
+
+    h2 {
+        font-weight: 300;
+    }
+
+    p {
+        font-weight: 100;
+    }
+
+
+    .btnStyle {
+        display: flex;
+        flex-direction: row;
+
+        button {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #00000027;
+            border-radius: 45px;
+            font-family: "Montserrat", sans-serif;
+            padding: 8px;
+            background-color: globals.$color_sand;
+            margin: 8px;
+
+            img {
+                display: block;
+                object-fit: contain;
+                height: 15px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 786px) {
+
+    .sectionStyle {
+        display: flex;
+        flex-direction: row;
+    }
+}

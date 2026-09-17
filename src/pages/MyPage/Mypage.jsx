@@ -1,4 +1,3 @@
-import { Button } from "../../components/Button/Button";
 import { Footer } from "../../components/Footer/Footer";
 import { Logo } from "../../components/Logo/Logo";
 import { Nav } from "../../components/Nav/Nav";
@@ -10,9 +9,7 @@ export function MyPage() {
         <>
      <Logo></Logo>
      <Nav></Nav>
-     <Button></Button>
      <Welcome></Welcome>
-   
      <Footer></Footer>
         </>
     )

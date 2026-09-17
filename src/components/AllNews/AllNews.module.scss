@@ -1,10 +1,29 @@
 @use '../../style/globals.scss';
 
+.bigImgStyle {
+
+    img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+    }
+}
 .sectionStyle {
     padding: 8px;
-   
+
+
     .newsStyle {
-        border: 1px solid black;
+        border: 1px solid #00000027;
         border-radius: 8px;
         margin: 8px;
         font-family: "Montserrat", sans-serif;
@@ -19,16 +38,22 @@
             display: block;
             object-fit: cover;
             width: 100%;
+            border-radius: 8px;
         }
     }
 }
 
 
 @media (min-width: 768px) {
+    .bigImgStyle{
+        display: flex;
+        flex-direction: column;
+    }
     .sectionStyle {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         margin: 8px;
+
     }
 }

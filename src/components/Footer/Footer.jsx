@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router'
+import { useAuth } from '../../provider/auth.provider'
 import style from './Footer.module.scss'
 import LinkedIn from '../../assets/LinkedIn.png'
 import Facebook from '../../assets/Facebook.png'
@@ -6,6 +7,40 @@ import Instagram from '../../assets/Instagram.png'
 import Google from '../../assets/Google.png'
 
 export function Footer() {
+
+    const { loginData } = useAuth()
+
+    function handleSubmit(e) {
+
+        e.preventDefault();
+
+        if (!loginData) {
+            window.alert('Du skal være logget ind for at tilmedle dig')
+        } else {
+
+            const form = e.target
+            const email = form.email.value
+
+            const formData = new FormData(form)
+            const formJson = Object.fromEntries(formData.entries())
+            console.log(formJson);
+            const bodyData = JSON.stringify(formJson)
+
+            fetch('http://localhost:4000/api/newsletter', {
+                method: 'POST', body: bodyData, headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": 'Bearer ' + loginData.accessToken
+                }
+            })
+                .then(
+                    res => res.json()
+                ).then(
+                    window.alert('Du er nu tilmeldt nyhedsbrevet!')
+
+                )
+        }
+
+    }
 
     return (
         <footer className={style.footerStyle}>
@@ -32,9 +67,9 @@ export function Footer() {
             <div>
                 <h3>Vil du have jobs direkte i din indbakke?</h3>
                 <p>tilmeld dig vores elektroniske nyhedsbrev</p>
-                <form action="">
-                <input type="email" placeholder='@ intast email...' />
-                <button>Tilmeld</button>
+                <form onSubmit={handleSubmit} action="">
+                    <input name='email' type="email" placeholder='@ intast email...' />
+                    <button type='submit'>Tilmeld</button>
                 </form>
             </div>
             <div>

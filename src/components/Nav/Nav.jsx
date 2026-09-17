@@ -18,7 +18,7 @@ export function Nav() {
         <nav className={style.navStyle}>
             <ul>
                 <li>
-                    <NavLink to={'/'}>Alle Jobs</NavLink>
+                    <NavLink to={'/allejobs'}>Alle Jobs</NavLink>
                 </li>
                 <li>
                     <NavLink to={'/annoncer'}>Opret annonce</NavLink>
@@ -38,7 +38,7 @@ export function Nav() {
                     :
                      <div>
                         <li>
-                            <NavLink>Min side</NavLink>
+                            <NavLink to='/minside'>Min side</NavLink>
                         </li>
                         <li>
                             <NavLink onClick={hadleLogout}>Log ud</NavLink>

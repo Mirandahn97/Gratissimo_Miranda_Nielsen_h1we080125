@@ -1,0 +1,44 @@
+@use '../../style/globals.scss';
+
+.sectionStyle{
+    background-color: globals.$color_sand;
+    padding: 8px;
+
+    h2{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+    }
+
+    .searchStyle{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #00000027;
+        border-radius: 25px;
+        position: relative;
+        height: 45px;
+
+        img{
+            position: absolute;
+            object-fit: cover;
+            width: 10%;
+            left: 5px;
+            
+        }
+        input{
+            border: none;
+            width: 100%;
+            border-radius: 25px 0 0 25px ;
+            padding-left: 50px;
+        }
+
+        button{
+            background-color: globals.$color_red;
+            color: globals.$color_white;
+            border-radius: 0  25px 25px 0;
+            border: 1px solid #00000027;
+            width: 25%;
+            
+        }
+    }
+
+}

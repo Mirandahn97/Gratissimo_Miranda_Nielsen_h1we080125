@@ -1,12 +1,11 @@
 import { useFetch } from "../../hooks/Fetch"
-import style from'./selectedNews.module.scss'
+import style from './selectedNews.module.scss'
 
 export function SelectedNews() {
 
     const url = 'http://localhost:4000/api/articles'
 
     const { data, isloading, error } = useFetch(url)
-    console.log(data)
 
     let selectedNewsArray
 
@@ -18,15 +17,15 @@ export function SelectedNews() {
             .slice(0, 3)
     }
 
-    console.log(selectedNewsArray);
 
 
 
 
     return (
         <section className={style.sectionStyle}>
-            {selectedNewsArray && selectedNewsArray.map((articles) => (
-                <>
+            <h2>Udvalgte Nyheder</h2>
+            <div className={style.cardStyle}>
+                {selectedNewsArray && selectedNewsArray.map((articles) => (
                     <div className={style.newStyle} key={articles.id}>
                         <img src={`http://localhost:4000${articles.imageUrl}`} alt="" />
                         <div>
@@ -35,9 +34,8 @@ export function SelectedNews() {
                         </div>
                         <p >{articles.title}</p>
                     </div>
-                </>
-            ))}
-
+                ))}
+            </div>
         </section>
     )
 }

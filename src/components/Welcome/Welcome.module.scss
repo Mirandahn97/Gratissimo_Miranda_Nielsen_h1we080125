@@ -1,0 +1,26 @@
+@use '../../style/globals.scss';
+
+.sectionStyle{
+    font-family: "Montserrat", sans-serif;
+    background-color: globals.$color_sand;
+
+    div{
+        text-align: center;
+
+        h2{
+            font-weight: 300;
+        }
+
+        p{
+            font-weight: 100;
+        }
+    }
+
+    .linkStyle{
+        
+
+        a{
+        color: globals.$color_red;
+        }
+    }
+}

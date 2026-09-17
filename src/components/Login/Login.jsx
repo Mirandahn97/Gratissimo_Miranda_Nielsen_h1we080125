@@ -1,10 +1,11 @@
-import { NavLink } from "react-router"
+import { NavLink, useNavigate } from "react-router"
 import { useAuth } from "../../provider/auth.provider"
 import style from './Login.module.scss'
 
 export function Login() {
 
     const { setLoginData } = useAuth()
+    const navigate = useNavigate()
 
     function handleSubmit(e) {
 
@@ -27,7 +28,9 @@ export function Login() {
             .then(
                 res => res.json()
             ).then(
-                data => setLoginData(data)
+                data => setLoginData(data),
+                window.alert('Du er nu logget ind'),
+                navigate('/minside')
             )
 
     }

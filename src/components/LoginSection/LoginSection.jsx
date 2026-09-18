@@ -1,4 +1,3 @@
-import { NavLink } from "react-router"
 import style from './LoginSection.module.scss'
 
 export function LoginSection() {

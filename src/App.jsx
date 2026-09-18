@@ -5,6 +5,8 @@ import { LoginPage } from './pages/LoginPage/LoginPage'
 import { SignupPage } from './pages/SignupPage/SignupPage'
 import { MyPage } from './pages/MyPage/Mypage'
 import { AllJobsPage } from './pages/AllJobsPage/AllJobsPage'
+import { AnnoncePage } from './pages/AnnoncePage/AnnoncePage'
+import { ProfilePage } from './pages/ProfilePage/ProfilePage'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
            <Route path='/opret' element={<SignupPage/>}></Route>
            <Route path='/minside' element={<MyPage/>}></Route>
            <Route path ='/allejobs' element={<AllJobsPage/>}></Route>
+           <Route path='/annoncer' element={<AnnoncePage/>}></Route>
+           <Route path='/rediger' element={<ProfilePage/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

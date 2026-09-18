@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.sectionStyle {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
+.sectionStyle button {
+  padding: 8px;
+  background-color: #F5EEEC;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  font-family: "Montserrat", sans-serif;
+}
+.sectionStyle button:active {
+  background-color: #AB0E0E;
+  color: #F9F9F9;
+}
+.sectionStyle .left {
+  border-radius: 45px 0 0 45px;
+}
+.sectionStyle .right {
+  border-radius: 0 45px 45px 0;
+}/*# sourceMappingURL=MyButton.module.css.map */

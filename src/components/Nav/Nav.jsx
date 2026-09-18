@@ -41,7 +41,7 @@ export function Nav() {
                             <NavLink to='/minside'>Min side</NavLink>
                         </li>
                         <li>
-                            <NavLink onClick={hadleLogout}>Log ud</NavLink>
+                            <NavLink to='/' onClick={hadleLogout}>Log ud</NavLink>
                         </li>
                     </div>
                 }

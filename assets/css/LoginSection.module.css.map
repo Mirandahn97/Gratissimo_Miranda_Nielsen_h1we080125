@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/style/globals.scss","../../src/components/LoginSection/LoginSection.module.scss","LoginSection.module.css"],"names":[],"mappings":"AACQ,kQAAA;ACCR;EACI,qCAAA;EACA,yBDMS;ECLT,kBAAA;EACA,YAAA;ACAJ;ADEI;EACI,gBAAA;ACAR;ADGI;EACI,cDNI;ECOJ,0BAAA;ACDR","file":"LoginSection.module.css"}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.footerStyle {
+  background-color: #AB0E0E;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: auto;
+  padding: 5px;
+}
+.footerStyle div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+.footerStyle div h3 {
+  color: #F9F9F9;
+}
+.footerStyle div a {
+  color: #F9F9F9;
+  text-decoration: none;
+}
+.footerStyle div p {
+  color: #F9F9F9;
+}
+.footerStyle div form {
+  display: flex;
+  flex-direction: row;
+}
+.footerStyle div input {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 8px;
+  width: 65%;
+  font-family: "Montserrat", sans-serif;
+}
+.footerStyle div button {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  width: 25%;
+  padding: 8px;
+  background-color: #8B0808;
+  color: #F9F9F9;
+  height: 100%;
+}
+.footerStyle div img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20%;
+}
+.footerStyle .imgStyle {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .footerStyle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .footerStyle div {
+    width: 100%;
+  }
+  .footerStyle div button {
+    width: auto;
+  }
+  .footerStyle img {
+    min-width: 30px;
+  }
+  .footerStyle p {
+    display: flex;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

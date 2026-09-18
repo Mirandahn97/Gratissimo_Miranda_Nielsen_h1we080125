@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.sectionStyle {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #F9F9F9;
+}
+.sectionStyle h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+.sectionStyle form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 8px;
+  gap: 1rem;
+}
+.sectionStyle form div {
+  display: flex;
+  flex-direction: column;
+}
+.sectionStyle form label {
+  text-align: left;
+}
+.sectionStyle form input {
+  background-color: #F5EEEC;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  border-radius: 8px;
+  padding: 8px;
+}
+.sectionStyle form button {
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #8B0808;
+  color: #F9F9F9;
+}/*# sourceMappingURL=Profile.module.css.map */

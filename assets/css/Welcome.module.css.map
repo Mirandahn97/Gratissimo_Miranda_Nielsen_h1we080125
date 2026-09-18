@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/style/globals.scss","../../src/components/Welcome/Welcome.module.scss","Welcome.module.css"],"names":[],"mappings":"AACQ,kQAAA;ACCR;EACI,qCAAA;EACA,yBDMS;AENb;ADEI;EACI,kBAAA;ACAR;ADEQ;EACI,gBAAA;ACAZ;ADGQ;EACI,gBAAA;ACDZ;ADQQ;EACI,cDfA;ECgBD,WAAA;ACNX","file":"Welcome.module.css"}

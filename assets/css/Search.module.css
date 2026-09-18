@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.sectionStyle {
+  background-color: #F5EEEC;
+  padding: 8px;
+}
+.sectionStyle h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.sectionStyle .searchStyle {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  border-radius: 25px;
+  position: relative;
+  height: 45px;
+}
+.sectionStyle .searchStyle img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 45px;
+  left: 5px;
+}
+.sectionStyle .searchStyle input {
+  border: none;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+  padding-left: 50px;
+}
+.sectionStyle .searchStyle button {
+  background-color: #AB0E0E;
+  color: #F9F9F9;
+  border-radius: 0 25px 25px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  width: 25%;
+}
+
+.filterStyle {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  gap: 1rem;
+}
+.filterStyle select {
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .filterStyle {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-between;
+  }
+  .filterStyle select {
+    margin-top: 1rem;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1529411765);
+    padding: 8px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=Search.module.css.map */

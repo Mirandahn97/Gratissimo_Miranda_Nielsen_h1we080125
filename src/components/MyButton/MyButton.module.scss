@@ -1,0 +1,29 @@
+@use '../../style/globals.scss';
+
+.sectionStyle {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    
+
+    button {
+        padding: 8px;
+        background-color: globals.$color_sand;
+        border: 1px solid #00000027;
+        font-family: "Montserrat", sans-serif;
+
+        &:active {
+            background-color: globals.$color_red;
+            color: globals.$color_white;
+        }
+    }
+
+    .left {
+        border-radius: 45px 0 0 45px;
+
+    }
+
+    .right {
+        border-radius: 0 45px 45px 0;
+    }
+}

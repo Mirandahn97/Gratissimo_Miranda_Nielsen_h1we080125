@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.sectionStyle {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+}
+.sectionStyle h2 {
+  font-weight: 300;
+}
+.sectionStyle p {
+  font-weight: 100;
+}
+.sectionStyle .btnStyle {
+  display: flex;
+  flex-direction: row;
+}
+.sectionStyle .btnStyle button {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+  border-radius: 45px;
+  font-family: "Montserrat", sans-serif;
+  padding: 8px;
+  background-color: #F5EEEC;
+  margin: 8px;
+}
+.sectionStyle .btnStyle button img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 15px;
+}
+
+@media (min-width: 786px) {
+  .sectionStyle {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=JobCard.module.css.map */

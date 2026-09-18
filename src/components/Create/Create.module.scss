@@ -1,0 +1,80 @@
+@use '../../style/globals.scss';
+
+.sectionStyle {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px;
+
+
+    input {
+        border-radius: 8px;
+        border: 1px solid #00000027;
+        font-family: "Montserrat", sans-serif;
+        margin: 8px;
+        padding: 8px;
+        background-color: globals.$color_sand;
+        width: 20vh;
+      
+    }
+
+    select {
+        border-radius: 8px;
+        border: 1px solid #00000027;
+        font-family: "Montserrat", sans-serif;
+        margin: 8px;
+        background-color: globals.$color_sand;
+        padding: 8px;
+        width: 20vh;
+        
+    }
+
+    textarea {
+        font-family: "Montserrat", sans-serif;
+        border-radius: 8px;
+        border: 1px solid #00000027;
+        background-color: globals.$color_sand;
+        
+    }
+
+    .leftStyle {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .rightStyle {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .sectionStyle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input {
+            display: flex;
+            flex-direction: column;
+            width: 45vw;
+        }
+
+        select {
+            display: flex;
+            flex-direction: column;
+            width: 45vw;
+        }
+
+        textarea {
+            font-family: "Montserrat", sans-serif;
+            border-radius: 8px;
+            border: 1px solid #00000027;
+            background-color: globals.$color_sand;
+            width: 45vw;
+            height: 55vh;
+        }
+    }
+}
